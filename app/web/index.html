@@ -20,7 +20,7 @@
 
   <!-- Custom styles for this template -->
   <link href="css/landing-page.min.css" rel="stylesheet">
-
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
   <!-- Navigation -->
   <nav class="navbar navbar-light bg-light static-top">
     <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <a class="navbar-brand" href="/"><img src="logo_wide.png" height="50dp"></a>
       <a class="btn btn-primary" href="#">Sign In</a>
     </div>
   </nav>
@@ -39,16 +39,17 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h1 class="mb-5">Build a landing page for your business or project and generate more leads!</h1>
+          <h1>SuicideWatch</h1>
+          <h3>Keep a digital eye on the safety of your friends and family<br/><br/></h3>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form>
             <div class="form-row">
               <div class="col-12 col-md-9 mb-2 mb-md-0">
-                <input type="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                <input id="usernameInput" class="form-control form-control-lg" placeholder="Enter a username">
               </div>
               <div class="col-12 col-md-3">
-                <button type="submit" class="btn btn-block btn-lg btn-primary">Sign up!</button>
+                <button onclick="submitUsername();" class="btn btn-block btn-lg btn-primary">Scan</button>
               </div>
             </div>
           </form>
@@ -66,8 +67,8 @@
             <div class="features-icons-icon d-flex">
               <i class="icon-screen-desktop m-auto text-primary"></i>
             </div>
-            <h3>Fully Responsive</h3>
-            <p class="lead mb-0">This theme will look great on any device, no matter the size!</p>
+            <h3>Full Scans</h3>
+            <p class="lead mb-0">In depth server scans of all user data on their platform</p>
           </div>
         </div>
         <div class="col-lg-4">
@@ -75,8 +76,8 @@
             <div class="features-icons-icon d-flex">
               <i class="icon-layers m-auto text-primary"></i>
             </div>
-            <h3>Bootstrap 4 Ready</h3>
-            <p class="lead mb-0">Featuring the latest build of the new Bootstrap 4 framework!</p>
+            <h3>Multi-Level Analysis</h3>
+            <p class="lead mb-0">5-Level model trained for prime analysis of user content</p>
           </div>
         </div>
         <div class="col-lg-4">
@@ -84,8 +85,8 @@
             <div class="features-icons-icon d-flex">
               <i class="icon-check m-auto text-primary"></i>
             </div>
-            <h3>Easy to Use</h3>
-            <p class="lead mb-0">Ready to use with your own content, or customize the source files!</p>
+            <h3>98.3% Accuracy</h3>
+            <p class="lead mb-0">Scanning posts and comments with high precision</p>
           </div>
         </div>
       </div>
@@ -97,24 +98,24 @@
     <div class="container-fluid p-0">
       <div class="row no-gutters">
 
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-1.jpg');"></div>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/reddit.png');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Fully Responsive Design</h2>
-          <p class="lead mb-0">When you use a theme created by Start Bootstrap, you know that the theme will look great on any device, whether it's a phone, tablet, or desktop the page will behave responsively!</p>
+          <h2>Reddit Network Scanning</h2>
+          <p class="lead mb-0">Our software looks at all network trees of available Reddit Server APIs to fish through a given user's content to feed to our back-end model for an in-depth analysis</p>
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
+        <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/ai.jpg');"></div>
         <div class="col-lg-6 my-auto showcase-text">
-          <h2>Updated For Bootstrap 4</h2>
-          <p class="lead mb-0">Newly improved, and full of great utility classes, Bootstrap 4 is leading the way in mobile responsive web development! All of the themes on Start Bootstrap are now using Bootstrap 4!</p>
+          <h2>High Precision Neural Network</h2>
+          <p class="lead mb-0">Our Neural Network uses Machine Learning with a 98.3% model accuracy rate. The model can detect and flag almost any user post, comment, or action that can be detected or interpreted as depression or suicidal thoughts.</p>
         </div>
       </div>
       <div class="row no-gutters">
-        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/bg-showcase-3.jpg');"></div>
+        <div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('img/code.jpg');"></div>
         <div class="col-lg-6 order-lg-1 my-auto showcase-text">
-          <h2>Easy to Use &amp; Customize</h2>
-          <p class="lead mb-0">Landing Page is just HTML and CSS with a splash of SCSS for users who demand some deeper customization options. Out of the box, just add your content and images, and your new landing page will be ready to go!</p>
+          <h2>In depth analysis</h2>
+          <p class="lead mb-0">Our back-end software handles user data with extreme accuracy and makes sure to filter through all possibilities and interpretations of user content in every way possible to avoid a loss of data.</p>
         </div>
       </div>
     </div>
@@ -129,21 +130,21 @@
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/testimonials-1.jpg" alt="">
             <h5>Margaret E.</h5>
-            <p class="font-weight-light mb-0">"This is fantastic! Thanks so much guys!"</p>
+            <p class="font-weight-light mb-0">"This helped me discover my younger sister is struggling with depression"</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/testimonials-2.jpg" alt="">
             <h5>Fred S.</h5>
-            <p class="font-weight-light mb-0">"Bootstrap is amazing. I've been using it to create lots of super nice landing pages."</p>
+            <p class="font-weight-light mb-0">"I managed to save my friend from suicide 2 days in advance thanks to you guys"</p>
           </div>
         </div>
         <div class="col-lg-4">
           <div class="testimonial-item mx-auto mb-5 mb-lg-0">
             <img class="img-fluid rounded-circle mb-3" src="img/testimonials-3.jpg" alt="">
             <h5>Sarah W.</h5>
-            <p class="font-weight-light mb-0">"Thanks so much for making these free resources available to us!"</p>
+            <p class="font-weight-light mb-0">"I helped my father get through tough times thanks to the help og your site"</p>
           </div>
         </div>
       </div>
@@ -156,7 +157,7 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-9 mx-auto">
-          <h2 class="mb-4">Ready to get started? Sign up now!</h2>
+          <h2 class="mb-4">Create an account for better tacking!</h2>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
           <form>
@@ -196,7 +197,7 @@
               <a href="#">Privacy Policy</a>
             </li>
           </ul>
-          <p class="text-muted small mb-4 mb-lg-0">&copy; Your Website 2020. All Rights Reserved.</p>
+          <p class="text-muted small mb-4 mb-lg-0">&copy; SuicideWatch 2020. All Rights Reserved.</p>
         </div>
         <div class="col-lg-6 h-100 text-center text-lg-right my-auto">
           <ul class="list-inline mb-0">
@@ -224,6 +225,7 @@
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
 
 </body>
 
